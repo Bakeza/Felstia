@@ -7,6 +7,7 @@ folkolre=db["folkolre"]
 history=db["history"]
 dresses=db["dresses"]
 
+#tttt
 @app.route("/Adminform", methods=["post","get"] )
 def Adminform():
 	tableName = ""
