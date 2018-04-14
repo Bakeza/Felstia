@@ -1,0 +1,84 @@
+body {
+	background-color: black;
+}
+h1{
+	color: red;
+	text-align: center;
+	font-size:40px;
+
+}
+
+.know{
+
+	color:white;
+	font-size: 20px;
+}
+
+
+
+.renan_pic{
+	border:solid hotpink 10px;
+	border-radius: 50%;
+	margin: 100px;
+
+}
+.khaled_pic{
+	border:solid blue  10px;
+	border-radius: 50%;
+	margin: 100px;
+	
+}
+.bakeza_pic{
+	border:solid hotpink  10px;
+	border-radius: 50%;
+	margin: 110px;
+
+
+} 
+
+.img-with-text{
+
+
+	display: inline-block;	
+
+	
+}
+.folk_pic{
+	border-radius: 20px;
+	margin:35px;
+
+}
+
+
+
+.food_pic{
+	
+	border-radius: 20px;
+	margin: 35px;
+
+}
+
+
+.dresses_pic{
+	border-radius: 20px;
+	margin:35px;
+
+}
+
+.history_pic{
+	border-radius: 20px;
+	margin:35px;
+
+
+}
+
+
+
+.big{
+	font-size:55;
+	color:white;
+}
+
+
+
+
