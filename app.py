@@ -1,3 +1,4 @@
+
 from flask import Flask,render_template,request
 import dataset
 app=Flask(__name__)
@@ -6,6 +7,18 @@ food=db["food"]
 folkolre=db["folkolre"]
 history=db["history"]
 dresses=db["dresses"]
+history.delete(title="test")
+
+
+
+#table.delete(place=)
+@app.route("/")
+def home_page():
+	return render_template("index.html")
+
+@app.route("/history")
+def historypage():
+	return render_template("history.html", history=history.all())
 
 @app.route("/Adminform", methods=["post","get"] )
 def Adminform():
@@ -36,5 +49,4 @@ def Adminform():
 
 
 if __name__ == '__main__':
-	app.run(port=8080)
-
+		app.run(port=8070)
