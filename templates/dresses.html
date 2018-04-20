@@ -4,6 +4,10 @@
 {%block head%}
 
 	<title>Felstia</title>
+	 <link rel="stylesheet" type="text/css" href="../static/stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../static/stylesheets/style.css">
+        <img src="../static/images/Felstia.png">
+
 {%endblock%}
 
 </head>
@@ -20,18 +24,15 @@
 <h1 class="color">* Women</h1>
 	 <div class="row">
     <div class="col-sm-3 offset-md-2">
-<a href="https://www.pinterest.com/pin/437341813808284717/"><img src="../static/images/1.jpg" class="pic" height="50%" ></img></a>
+<a href="https://www.pinterest.com/pin/437341813808284717/"><img src="../static/images/1.jpg" class="pic" ></img></a>
     </div>
     <div class="col-sm-3 offset-md-2">
-<a href="https://www.pinterest.com/pin/453526624968358610/"><img src="../static/images/2.jpg" class="pic" height="50%"  ></img></a>
+<a href="https://www.pinterest.com/pin/453526624968358610/"><img src="../static/images/2.jpg" class="pic"  ></img></a>
     </div>
   </div>
 </div>
-	<a href="https://www.pinterest.com/search/pins/?rs=ac&len=2&q=palestine%20dress%20traditional%20clothes&eq=palestine%20dress&etslf=3907&term_meta[]=palestine%7Cautocomplete%7Cundefined&term_meta[]=dress%7Cautocomplete%7Cundefined&term_meta[]=traditional%7Cautocomplete%7Cundefined&term_meta[]=clothes%7Cautocomplete%7Cundefined" class="see-more">See More</a>
-
-	<hr class="colo">
-
-<h1 class="color">* Men</h1>	
+	
+<!-- <h1 class="color">* Men</h1>	
 	 <div class="row">
     <div class="col-sm-3 offset-md-2">
 <a href="https://www.pinterest.com/pin/437341813808284717/"><img src="../static/images/6.jpg" class="pic" height="50%"  ></img></a>
@@ -41,8 +42,30 @@
     </div>
   </div>
 </div>
-		<a href="https://www.pinterest.com/search/pins/?q=traditional%20clothes%20palestine%20for%20man&rs=typed&term_meta[]=traditional%20clothes%20palestine%20for%20man%7Ctyped" class="see-more">See More</a>
-	{%endblock%}
+		<a href="https://www.pinterest.com/search/pins/?q=traditional%20clothes%20palestine%20for%20man&rs=typed&term_meta[]=traditional%20clothes%20palestine%20for%20man%7Ctyped" class="see-more">See More</a> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<div class="row">
+	{% for dress in dresses %}
+
+<div class="col-sm-3 offset-md-2">
+
+<img src="{{dress.photo_link}}" class="pic" />
+</div>
+{% endfor %}
+
+</div>
+
+
+
+
+<a href="https://www.pinterest.com/search/pins/?rs=ac&len=2&q=palestine%20dress%20traditional%20clothes&eq=palestine%20dress&etslf=3907&term_meta[]=palestine%7Cautocomplete%7Cundefined&term_meta[]=dress%7Cautocomplete%7Cundefined&term_meta[]=traditional%7Cautocomplete%7Cundefined&term_meta[]=clothes%7Cautocomplete%7Cundefined" class="see-more">See More</a>
+
+	<hr class="colo">
+
+
+	{%endblock%}
+
 </body>
 </html>
