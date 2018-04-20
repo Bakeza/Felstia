@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<img  src="https://www.ocf.berkeley.edu/~sather/wp-content/uploads/2018/01/food--1200x600.jpg" class="kimg" />
+<h1>Palestinian cuisine</h1>
+
+ <p class="know">Palestinian cuisine consists of foods from or commonly eaten by Palestinians—which includes those living in Palestine, Jordan, refugee camps in nearby countries as well as by the Palestinian diaspora. The cuisine is a diffusion of the cultures of civilizations that settled in the region of Palestine, particularly during and after the Islamic era beginning with the Arab Ummayad conquest, then the eventual Persian-influenced Abbasids and ending with the strong influences of Turkish cuisine, resulting from the coming of the Ottoman Turks. It is similar to other Levantine cuisines, including Lebanese, Syrian and Jordanian.
+
+Cooking styles vary by region and each type of cooking style and the ingredients used are generally based on the climate and location of the particular region and on traditions. Rice and variations of kibbee are common in the Galilee. The West Bank engages primarily in heavier meals involving the use of taboon bread, rice and meat and coastal plain inhabitants frequent fish, other seafood, and lentils. The Gaza cuisine is a variation of the Levant cuisine, but is more diverse in seafood and spices. Gaza's inhabitants heavily consume chili peppers too. Meals are usually eaten in the household but dining out has become prominent particularly during parties where light meals like salads, bread dips and skewered meats are served.
+
+The area is also home to many desserts, ranging from those made regularly and those that are commonly reserved for the holidays. Most Palestinian sweets are pastries filled with either sweetened cheeses, dates or various nuts such as almonds, walnuts or pistachios. Beverages could also depend on holidays such as during Ramadan, where carob, tamarind and apricot juices are consumed at sunset. Coffee is consumed throughout the day and liquor is not very prevalent among the population, however, some alcoholic beverages such as arak or beer are consumed by Christians and less conservative Muslims.</p>
+
+{% for type in food %}
+
+
+<h1>{{type.title}}</h1>
+
+<div class="know">
+<p>{{type.subject}}</p>
+</div>
+
+<div class="pics">
+<img src="{{type.photo_link}}"/>
+</div>
+
+<hr>
+{% endfor %}
+
+
+
+
+{% endblock %}

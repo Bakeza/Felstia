@@ -1,9 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title> </title>
-</head>
-<body>
+{% extends "layout.html" %}
+{% block body %}
 
-</body>
-</html>
+
+{% for folk in folkolre%}
+
+<h1>{{folk.title}}</h1>
+
+
+<div class="know">
+<p>{{folk.subject}}</p>
+</div>
+
+<div class="links"  style="text-align: center;" >
+	<iframe width="560" height="315" src="{{folk.link}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<div class="pics">
+<img src="{{folk.photo_link}}"/>
+
+
+
+{% endfor %}
+
+{% endblock %}

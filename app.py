@@ -7,11 +7,10 @@ food=db["food"]
 folkolre=db["folkolre"]
 history=db["history"]
 dresses=db["dresses"]
-history.delete(title="test")
-
-
-
+#{%endblock %}
+#food.delete( title= "Dolma" )
 #table.delete(place=)
+#folkolre.drop()
 @app.route("/")
 def home_page():
 	return render_template("index.html")
@@ -19,6 +18,14 @@ def home_page():
 @app.route("/history")
 def historypage():
 	return render_template("history.html", history=history.all())
+
+@app.route("/folkolre")
+def folkolrePage():
+	return render_template("folkolre.html",folkolre=folkolre.all())
+@app.route("/food")
+def food_cate():
+	return render_template("food.html",food=food.all())
+
 
 #tttt
 @app.route("/Adminform", methods=["post","get"] )
@@ -43,11 +50,16 @@ def Adminform():
 		photo_link=request.form["photo_link"]
 
 		#print subject , title , link
-		tableName.insert(dict(subject=subject,title=title,link=link,photo_link=photo_link))
-		return render_template("Adminform.html",tableName=tableName)
+
+		AdminPassword=request.form["password"]
+		if (AdminPassword== "123"):
+			tableName.insert(dict(subject=subject,title=title,link=link,photo_link=photo_link))
+			return render_template("Adminform.html",tableName=tableName)
+		else:
+			return render_template ("food.html", food=food.all())
+
 	else:
 		return render_template("Adminform.html")
 
-
 if __name__ == '__main__':
-		app.run(port=8070)
+		app.run(port=8075)

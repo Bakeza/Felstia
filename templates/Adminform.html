@@ -1,50 +1,58 @@
-{% extends "layout.html" %}                       
+{% extends "layout.html" %}
+
 {% block body %}
+
 <form  method="post" action="/Adminform">
 
 
-<div class="form-check form-check-inline khaled">
-  <input class="form-check-input" type="radio" name = "section" id="inlineRadio1" value="food">
-  <label class="form-check-label " for="inlineRadio1">food</label>
-</div>
+
 
 <div class="form-check form-check-inline khaled">
   <input class="form-check-input" type="radio" name = "section" id="inlineRadio2" value="folkolre">
-  <label class="form-check-label" for="inlineRadio2">folkolre</label>
+  <label class="form-check-label" for="inlineRadio2">Folkolre</label>
 </div>
-
+<div class="form-check form-check-inline khaled">
+  <input class="form-check-input" type="radio" name = "section" id="inlineRadio1" value="food">
+  <label class="form-check-label " for="inlineRadio1">Food</label>
+</div>
 <div class="form-check form-check-inline khaled">
   <input class="form-check-input" type="radio" name = "section" id="inlineRadio2" value="history">
-  <label class="form-check-label" for="inlineRadio2">history</label>
+  <label class="form-check-label" for="inlineRadio2">History</label>
 
 </div>
 
 <div class="form-check form-check-inline khaled">
   <input class="form-check-input" type="radio" name = "section" id="inlineRadio2" value="dresses">
-  <label class="form-check-label" for="inlineRadio2">dresses</label>
+  <label class="form-check-label" for="inlineRadio2">Dresses</label>
 
 </div>
 
 
   <div class="form-group">
-    <label for="exampleInputEmail1"  class="khaled">title</label>
+    <label for="exampleInputEmail1"  class="khaled">Title</label>
     <input type="text" class="form-control" name="title" id="exampleInputEmail1" aria-describedby="emailHelp" >
   </div>
 
   <div class="form-group">
-    <label for="exampleInputPassword1" class="khaled">subject</label>
+    <label for="exampleInputPassword1" class="khaled">Subject</label>
     <input type="text" class="form-control" name="subject"  id="exampleInputPassword1">
   </div>
   <div class="form-group">
-    <label for="exampleInputEmail1"  class="khaled">link</label>
+    <label for="exampleInputEmail1"  class="khaled">Link</label>
     <input type="text" class="form-control" name="link" id="exampleInputEmail1" aria-describedby="emailHelp" >
   </div>
 
   <div class="form-group">
-    <label for="exampleInputPassword1"  class="khaled">photo_Link</label>
+    <label for="exampleInputPassword1"  class="khaled">Photo Link</label>
     <input type="text" class="form-control" name="photo_link" id="exampleInputPassword1">
   </div>
+
+<div class="form-group">
+    <label for="exampleInputPassword1"  class="khaled">Admin Password</label>
+    <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+  </div>
+
   <button type="submit" class="btn btn-danger">Submit</button>
 </form>
 
-{%endblock %}
+{% endblock %}
