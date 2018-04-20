@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+{% for event in history%}
+
+<h1>{{event.title}}</h1>
+
+
+<div class="know">
+<p>{{event.subject}}</p>
+</div>
+
+<div class="links">
+<a href="{{event.link}}"></a>
+</div>
+
+<div class="pics">
+<img src="{{event.photo_link}}"/>
+</div>
+
+{% endfor %}
+
+
+
+
+
+
+{%endblock %}

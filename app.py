@@ -8,6 +8,12 @@ history=db["history"]
 dresses=db["dresses"]
 
 #tttt
+
+@app.route("/")
+def home_page():
+	return render_template("index.html")
+
+	
 @app.route("/Adminform", methods=["post","get"] )
 def Adminform():
 	tableName = ""
@@ -34,7 +40,13 @@ def Adminform():
 		return render_template("Adminform.html",tableName=tableName)
 	else:
 		return render_template("Adminform.html")
+@app.route("/dresses")
+def dresses():
+	return render_template ("dresses.html")
 
+@app.route("/history")
+def historypage():
+	return render_template("history.html", history=history.all())
 
 if __name__ == '__main__':
 	app.run(port=8080)
