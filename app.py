@@ -20,6 +20,7 @@ def home_page():
 def historypage():
 	return render_template("history.html", history=history.all())
 
+#tttt
 @app.route("/Adminform", methods=["post","get"] )
 def Adminform():
 	tableName = ""

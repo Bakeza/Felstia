@@ -145,3 +145,10 @@ text-align:center;
 border-radius: 20px;
 
 }
+.colo {
+	background-color: white ;
+}
+.pic{
+		border:solid red  10px;
+		border-radius: 50%;
+}
