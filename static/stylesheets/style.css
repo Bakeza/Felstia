@@ -1,0 +1,147 @@
+body {
+	background-color: black;
+}
+h1{
+	color: red;
+	text-align: center;
+	font-size:40px;
+
+}
+
+.know{
+
+	color:white;
+	font-size: 20px;
+}
+
+
+
+.renan_pic{
+	border:solid hotpink 10px;
+	border-radius: 50%;
+	margin: 100px;
+
+}
+.khaled_pic{
+	border:solid blue  10px;
+	border-radius: 50%;
+	margin: 100px;
+	
+}
+.bakeza_pic{
+	border:solid hotpink  10px;
+	border-radius: 50%;
+	margin: 110px;
+
+
+} 
+
+.img-with-text{
+
+
+	display: inline-block;	
+
+	
+}
+.folk_pic{
+	border-radius: 20px;
+	margin:35px;
+
+}
+
+
+
+.food_pic{
+	
+	border-radius: 20px;
+	margin: 35px;
+
+}
+
+
+.dresses_pic{
+	border-radius: 20px;
+	margin:35px;
+
+}
+
+.history_pic{
+	border-radius: 20px;
+	margin:35px;
+
+
+}
+
+
+
+.big{
+	font-size:55;
+	color:white;
+}
+
+
+h1{
+	color: red ;
+	text-align: center;
+}
+.nav_bar {
+	font-family: New Century Schoolbook;
+	border: solid black 5px ;
+	background-image: url(../images/8.jpg);
+	position :fixed;
+	top:0px;
+	left: 0px;
+	width: -webkit-calc(100% - 25px);
+    width:    -moz-calc(100% - 25px);
+    width:         calc(100% - 25px);
+
+}
+
+.nav_bar a:hover {
+	color: red ;       
+}
+.nav_bar li { 
+	font-size: 50px;
+	font-weight: 800;
+	display:inline ;
+	margin: 25px 25px;
+}
+.nav_bar li a{ 
+	text-decoration: none;
+	color: black;
+ }
+.color{
+	font-family: New Century Schoolbook;
+
+	color: red;
+	font-size: 50px;
+	text-align: center;
+	padding: 20px;
+
+}
+.see-more{
+	font-family: New Century Schoolbook;
+
+	color: red;
+	font-size: 50px;
+	padding: 50px 50px;
+}
+.see-more a:hover{
+		color: white ;       
+
+}
+.khaled{
+	margin-left:50px; 
+	font-family: New Century Schoolbook;
+
+	color: white;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.pics{
+text-align:center;
+border-radius: 20px;
+
+}
