@@ -27,13 +27,22 @@ def food_cate():
 	return render_template("food.html",food=food.all())
 
 
-#tttt
+
+@app.route("/")
+def home_page():
+	return render_template("index.html")
+
+@app.route("/dresses")
+def dresses_page():
+	return render_template ("dresses.html" , dresses=dresses.all())
+	
 @app.route("/Adminform", methods=["post","get"] )
 def Adminform():
 	tableName = ""
 
 	if  (request.method =="POST"):
 		section=request.form["section"]
+
 		print(section)
 		if(section == "food"):
 			tableName = food
@@ -47,7 +56,7 @@ def Adminform():
 		subject=request.form["subject"]
 		title=request.form["title"]
 		link=request.form["link"]
-		photo_link=request.form["photo_link"]
+		photo_link=request.form["photo_link"] 
 
 		#print subject , title , link
 
@@ -63,3 +72,6 @@ def Adminform():
 
 if __name__ == '__main__':
 		app.run(port=8075)
+
+
+
