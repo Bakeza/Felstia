@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-      <link rel="stylesheet" type="text/css" href="../static/stylesheets/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../static/stylesheets/style.css">
-
-
-    </head>
-<body>
+{% extends "layout.html" %}                       
+{% block body %}
 <form  method="post" action="/Adminform">
 
 
@@ -54,13 +47,4 @@
   <button type="submit" class="btn btn-danger">Submit</button>
 </form>
 
-</body>
-</html>
-
-
-
-
-
-
-</body>
-</html>
+{%endblock %}
