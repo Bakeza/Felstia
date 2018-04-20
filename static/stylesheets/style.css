@@ -97,19 +97,6 @@ h1{
 
 }
 
-.nav_bar a:hover {
-	color: red ;       
-}
-.nav_bar li { 
-	font-size: 50px;
-	font-weight: 800;
-	display:inline ;
-	margin: 25px 25px;
-}
-.nav_bar li a{ 
-	text-decoration: none;
-	color: black;
- }
 .color{
 	font-family: New Century Schoolbook;
 
@@ -151,4 +138,34 @@ border-radius: 20px;
 .pic{
 		border:solid red  10px;
 		border-radius: 50%;
+		height: 500px;
 }
+
+body {
+	background-color: black;
+}
+h1{
+	color: red;
+	text-align: center;
+	font-size:40px;
+
+}
+
+
+.nav_bar {
+	color: black;
+	border: 5px;
+	border: solid black 5px ;
+	background-color: #DCDCDC ;
+/*	background-image: url(../images/8.jpg);
+*/	
+}
+.nav_bar a {
+	color: black;
+	font-size: 40px ;
+}
+.nav_bar li{
+	padding: 60px;
+
+}
+
